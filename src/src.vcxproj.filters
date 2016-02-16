@@ -6,5 +6,9 @@
     <ClCompile Include="KthIndexFromEnd.cpp" />
     <ClCompile Include="removeSpaces.cpp" />
     <ClCompile Include="commonWords.cpp" />
+    <ClCompile Include="MainStrings1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FunctionHeadersStrings1.h" />
   </ItemGroup>
 </Project>
