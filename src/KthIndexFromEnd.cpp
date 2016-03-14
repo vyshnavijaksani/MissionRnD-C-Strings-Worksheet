@@ -10,6 +10,7 @@ ERROR CASES: Return '\0' for invalid inputs.
 
 NOTES:
 */
+//to find length of the string
 int strlength(char *str)
 {
 	int i = 0, count = 0;
