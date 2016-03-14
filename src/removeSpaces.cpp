@@ -13,20 +13,17 @@ NOTES: Don't create new string.
 
 char removeSpaces(char *str) {
 	int i, j;
+	//check for null or empty string
 	if (str == '\0' || str == "")
 		return '\0';
 	
 	int count= 0;
+	//checking for empty spaces and removing them
 	for (int i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] != ' ')
 		{
-			//for (k = i + 1; str[k] != '\0'; k++)
-			//{
-			//	str[k] = str[k + 1];
-			//}
-			//}
-			//}
+			
 			str[count++] = str[i];
 		}
 	}
