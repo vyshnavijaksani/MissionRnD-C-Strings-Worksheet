@@ -10,7 +10,35 @@ ERROR CASES: Return '\0' for invalid inputs.
 
 NOTES:
 */
-
+int strlength(char *str)
+{
+	int i = 0, count = 0;
+	while (str[i]!='\0')
+	{
+		count++;
+		i++;
+	}
+	return count;
+}
 char KthIndexFromEnd(char *str, int K) {
-	return '\0';
+	char res;
+	if (str == '\0'){
+		return '\0';
+	}
+	if (K > strlength(str)){
+		return '\0';
+	}
+	if (str == '\0')
+	{
+		return '\0';
+	}
+	if (K < 0)
+	{
+		return '\0';
+	}
+	int len = strlength(str);
+	int index = len - K - 1;
+	res = str[index];
+
+	return res;
 }

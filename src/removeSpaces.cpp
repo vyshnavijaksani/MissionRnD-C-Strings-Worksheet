@@ -12,5 +12,24 @@ NOTES: Don't create new string.
 */
 
 char removeSpaces(char *str) {
-	return '\0';
+	int i, j;
+	if (str == '\0' || str == "")
+		return '\0';
+	
+	int count= 0;
+	for (int i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] != ' ')
+		{
+			//for (k = i + 1; str[k] != '\0'; k++)
+			//{
+			//	str[k] = str[k + 1];
+			//}
+			//}
+			//}
+			str[count++] = str[i];
+		}
+	}
+	str[count] = '\0';
+	return *str;
 }

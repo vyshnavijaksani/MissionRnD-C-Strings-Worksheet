@@ -18,5 +18,12 @@ NOTES: If there are no common words return NULL.
 #define SIZE 31
 
 char ** commonWords(char *str1, char *str2) {
+
+
+	while (*str1!=' ')
+
+
+
+
 	return NULL;
 }
